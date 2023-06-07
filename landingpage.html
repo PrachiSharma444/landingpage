@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing page</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        header{
+            width:100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                          url('lake-3934573_1280.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        
+        }
+        nav{
+             width: 100%;
+             height: 60px;
+             color:white;
+             display: flex;
+             justify-content:space-around;
+             align-items: center;
+        }
+        .logo{
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .menu a{ 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            position: relative;
+            font-size: 20px;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            width:0%;
+            height:100%;
+            top: 0;
+            left: 0;
+            border-bottom: 2px solid brown;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+              width:90%;
+             
+        }
+        .register a{
+            color: aliceblue;
+            font-size: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: brown;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid brown;
+        }
+        .h-text{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-text span{
+            letter-spacing: 5px;
+        }
+        .h-text h1{
+            letter-spacing: 2px;
+            font-size: 3.5em;;
+        }
+        .h-text a{
+            text-decoration: none;
+            color: white;
+            background-color: brown;
+            border-radius: 8px;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+
+        }
+        .h-text a:hover{
+            background: transparent;
+            border: 1px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+            Go-Trip
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Hill stations</a>
+          <a href="#">Best offer's</a>
+          <a href="#">Our Sites</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+      </nav>
+      <section class="h-text">
+        <span>Welcome To Go-Trip</span>
+        <h1>International Travel Agency</h1>
+        <br>
+        <a href="#">Book Your Seat Now</a>
+      </section>
+    </header>
+</body>
+</html>
